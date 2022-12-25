@@ -33,13 +33,12 @@ nav a {
 .produtos li {
   display: inline-block;
   text-align: center;
-
   width: 30%;
   vertical-align: top;
-
-  background-color: #cccc;
   margin: 0 1.5%;
   padding: 12px 24px;
+  border: 2px solid #000;
+  border-radius: 8px;
 }
 
 .produtos h2 {
