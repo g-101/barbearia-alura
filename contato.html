@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,12 +13,17 @@
       <!-- quando o seu site tem um logo, e ele é a primeira coisa que você quer exibir
       usa-se o h1 para envolver a logo -->
       <div class="caixa">
-        <h1><img src="./imagens/logo.png" /></h1>
+        <h1>
+          <img
+            src="./imagens/logo.png"
+            alt="logo da barbearia homem com barba e óculos na cor preta"
+          />
+        </h1>
         <nav>
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/produtos.html">Produtos</a></li>
-            <li><a href="/contatos.html">Contato</a></li>
+            <li><a href="/contato.html">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -26,19 +31,19 @@
     <main>
       <form>
         <label for="nomesobrenome">Nome e sobrenome</label>
-        <input type="text" id="nomesobrenome" class="input-padrao" />
+        <input type="text" id="nomesobrenome" class="input-padrao" required />
 
         <label for="email">Email</label>
-        <input type="text" id="email" class="input-padrao" />
+        <input type="email" id="email" class="input-padrao" required />
 
         <label for="telefone">Telefone</label>
-        <input type="text" id="telefone" class="input-padrao" />
+        <input type="tel" id="telefone" class="input-padrao" />
 
         <label for="mensagem">Mensagem</label>
-        <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+        <textarea cols="24" rows="12" id="mensagem" class="input-padrao"></textarea>
 
-        <div>
-          <p>Como prefere o nosso contato?</p>
+        <fieldset>
+          <legend>Como prefere o nosso contato?</legend>
           <label for="radio-email">
             <input type="radio" name="contato" value="email" id="radio-email" />
             Email
@@ -50,30 +55,56 @@
           </label>
 
           <label for="radio-whatsapp">
-            <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" />
+            <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked />
             WhatsApp
           </label>
-        </div>
+        </fieldset>
 
-        <div>
-          <p>Qual horário prefere ser atendido?</p>
+        <fieldset>
+          <legend>Qual horário prefere ser atendido?</legend>
           <select>
             <option>Manhã</option>
             <option>Tarde</option>
             <option>Noite</option>
           </select>
-        </div>
+        </fieldset>
         <label class="checkbox">
-          <input type="checkbox" />
+          <input type="checkbox" checked />
           Gostaria de receber nossas novidades por email?
         </label>
 
-        <input type="submit" value="Enviar formulário" />
+        <input type="submit" value="Enviar formulário" class="enviar" />
       </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Sexta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
     <footer>
       <div>
-        <img src="/imagens/logo-branco.png" alt="logo na cor branca" srcset="" />
+        <img
+          src="/imagens/logo-branco.png"
+          alt="logo da barbearia homem com barba e óculos na cor branca"
+          srcset=""
+        />
         <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
       </div>
     </footer>
