@@ -63,6 +63,7 @@ footer div {
   text-align: center;
   font-size: 2em;
   margin: 0 0 1em;
+  clear: left;
 }
 
 .principal p {
@@ -83,6 +84,8 @@ footer div {
 
 .utensilios {
   width: 120px;
+  margin: 0 24px 0 24px;
+  float: left;
 }
 
 /* PRODUTOS */
